@@ -20,28 +20,41 @@ Team Contribution graph:
 https://github.com/Lambda-School-Labs/labs9-workout-tracker/graphs/contributors
 
 GitHub Handle: Wdifulvio523
+
 Contributions did not seem to be showing up for me over the first three days. The computer I use for the project is my Lambda Loaner computer, so when I made commits, they were showing up under "Lambda_School_Loaner_46". I have since made corrections, and beginning from Day 4 my commits should now be populating correctly under my GitHub Handle.
 ![contribution graph](../../assets/selfweek1.png)
 
 
 Tasks Pulled
+
 Ticket 1
-Back-End: https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/18 - Created Delete for metrics, created PUT for users and created GETALL and GETBYID for workouts.
+
 Trello: https://trello.com/c/PwBEritM
 
+Back-End: https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/18 - Created Delete for metrics, created PUT for users and created GETALL and GETBYID for workouts.
+
+
 Ticket 2
-Front-End: https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/19 - Solo PR. Added data structure to README.md. Continued working on Schedule view page. Commented areas that will need further discussion/clarification
+
 Trello: 
 https://trello.com/c/ec4LS07z
 https://trello.com/c/vZ4ZmOYd
 
+Front-End: https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/19 - Solo PR. Added data structure to README.md. Continued working on Schedule view page. Commented areas that will need further discussion/clarification
+
+
 Ticket 3
-https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/15 -Passed needed props to schedule view and its child components. refactored needed components to function components to remove state. adjusted size and shape of calendar to allow for additional edits. Added data structure to README.md. Continued working on Schedule view page. Commented areas that will need further discussion/clarification.
+
 Trello: https://trello.com/c/Ue8j1HOu
 
+https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/15 -Passed needed props to schedule view and its child components. refactored needed components to function components to remove state. adjusted size and shape of calendar to allow for additional edits. Added data structure to README.md. Continued working on Schedule view page. Commented areas that will need further discussion/clarification.
+
+
 Ticket 4
-https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/9 -styled components. Also added the styled components dependency. Finally, we populated the SideNav components with links to the other views
+
 Trello: https://trello.com/c/vZ4ZmOYd
+
+https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/9 -styled components. Also added the styled components dependency. Finally, we populated the SideNav components with links to the other views
 
 #### Detailed Analysis:
 
@@ -65,5 +78,8 @@ Finally, I added our data structure to README.md for clarification purposes.
 TDD Link: https://docs.google.com/document/d/1bf85YKXkPxtMmbC5fXgqM1soF9CiTSDIDejN49aTBXA/edit?usp=sharing
 
 Live Deployed Front-End: https://fitmetrix.netlify.com/
+
 Live Deployed Back-End: https://fitmetrix.herokuapp.com/api/user/info/22
+
+User Models can be seen on the back-end server
 

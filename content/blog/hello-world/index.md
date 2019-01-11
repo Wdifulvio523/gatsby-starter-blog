@@ -5,7 +5,7 @@ date: '2019-01-11T18:40:00.284Z'
 
 Part 1 - Individual Accomplishments this Week
 
-On day 1, our team completed the Technical design document to make sure we had a solid understanding of our project. We made decisions as a team as to what technologies we would use for the front and back-end, as well as for the database. In addition, I found a way to create a custom calendar component to avoid having to install an additional dependency.
+On day 1, our team completed the Technical Design Document (TDD) to make sure we had a solid understanding of our project. We made decisions as a team as to what technologies we would use for the front and back-end, as well as for the database. In addition, I found a way to create a custom calendar component to avoid having to install an additional dependency.
 
 Day 2 was the first day of the project initialization. The team split up into Front-end and back-end groups. On front-end, we built out the folder structure, created all the necessary component files and folders, and standardized our naming conventions. We aldo downloaded needed dependencies like react-router, and deployed the application to Netlify.
 
@@ -62,7 +62,49 @@ https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/19
 
 This was my Solo Pull request. For this PR, I continued working on Schedule view page, as I will probably be owning that page for the most part. In addition, I commented on some areas that I believed would need further discussion/clarification: 
 - An instance in one of our view that we could create an additional compnent to make the code more straightforward. 
+```const WorkoutDetails = (props) => {
+  return <WorkoutDetailsStyle>WorkoutDetails</WorkoutDetailsStyle>;	  return <WorkoutDetailsStyle>
+    WorkoutDetails
+
+     {/* Mapping through schedule workouts to return the category, 
+    then I needed to map through exercises as well to render each exercise from the exercise array.
+    Another choice is to create another component after mapping through schedule workouts, 
+    and mapping through the exercises array on that component -wd */}
+
+     {props.scheduleWorkouts.map(scheduleWorkout => {
+    return (
+      <div key={scheduleWorkout.id}>
+
+         <p>{scheduleWorkout.category.name}</p>
+        {scheduleWorkout.exercises.map(exercise => {
+          return (
+            <p key={exercise.id}>{exercise.name}</p>
+          )
+        })}
+      </div>
+    )
+  })}</WorkoutDetailsStyle>;```
+
 - An instance on schedule view that I believe may neet to be a Class component rather than a function component as it currently was.
+
+```/* I believe this view needs it's own state so that we can render the Addworkout/Workout details
+components based on a dateSelected flag, as well as based on whether the date selected is already populated
+*/
+class ScheduleView extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dateSelected: false
+    };
+  }
+
+  selectDate() {
+    console.log(this)
+    console.log(this.state)
+    // this.setState({dateSelected:true})
+  }
+```
+
 Finally, I added our data structure to README.md for clarification purposes.
 
 
@@ -75,7 +117,7 @@ Finally, I added our data structure to README.md for clarification purposes.
 
 
 
-TDD Link: https://docs.google.com/document/d/1bf85YKXkPxtMmbC5fXgqM1soF9CiTSDIDejN49aTBXA/edit?usp=sharing
+Technical Design Document Link: https://docs.google.com/document/d/1bf85YKXkPxtMmbC5fXgqM1soF9CiTSDIDejN49aTBXA/edit?usp=sharing
 
 Live Deployed Front-End: https://fitmetrix.netlify.com/
 

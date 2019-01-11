@@ -62,14 +62,15 @@ https://github.com/Lambda-School-Labs/labs9-workout-tracker/pull/19
 
 This was my Solo Pull request. For this PR, I continued working on Schedule view page, as I will probably be owning that page for the most part. In addition, I commented on some areas that I believed would need further discussion/clarification: 
 - An instance in one of our view that we could create an additional compnent to make the code more straightforward. 
-```const WorkoutDetails = (props) => {
-  return <WorkoutDetailsStyle>WorkoutDetails</WorkoutDetailsStyle>;	  return <WorkoutDetailsStyle>
-    WorkoutDetails
 
-     {/* Mapping through schedule workouts to return the category, 
+```
+const WorkoutDetails = (props) => {
+  return <WorkoutDetailsStyle>WorkoutDetails</WorkoutDetailsStyle>;	  
+
+      /*Mapping through schedule workouts to return the category, 
     then I needed to map through exercises as well to render each exercise from the exercise array.
     Another choice is to create another component after mapping through schedule workouts, 
-    and mapping through the exercises array on that component -wd */}
+    and mapping through the exercises array on that component -wd */
 
      {props.scheduleWorkouts.map(scheduleWorkout => {
     return (
@@ -83,13 +84,16 @@ This was my Solo Pull request. For this PR, I continued working on Schedule view
         })}
       </div>
     )
-  })}</WorkoutDetailsStyle>;```
+  })}</WorkoutDetailsStyle>;
+  ```
 
 - An instance on schedule view that I believe may neet to be a Class component rather than a function component as it currently was.
 
-```/* I believe this view needs it's own state so that we can render the Addworkout/Workout details
+
+``` 
+I believe this view needs it's own state so that we can render the Addworkout/Workout details
 components based on a dateSelected flag, as well as based on whether the date selected is already populated
-*/
+
 class ScheduleView extends React.Component {
   constructor(props) {
     super(props);

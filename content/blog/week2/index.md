@@ -1,6 +1,6 @@
 ---
 title: Week 2 - Now we're rolling!
-date: '2019-01-18 T22:40:32.169Z'
+date: '2019-01-18T22:40:32.169Z'
 ---
 
 ### Week 2 - Now We're Rolling!

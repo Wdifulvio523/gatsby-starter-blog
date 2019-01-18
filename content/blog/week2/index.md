@@ -1,6 +1,6 @@
 ---
 title: Week 2 - Now we're rolling!
-date: '2015-05-28T22:40:32.169Z'
+date: '2019-01-18 T22:40:32.169Z'
 ---
 
 ### Week 2 - Now We're Rolling!
@@ -256,8 +256,22 @@ renderCells() {
 Overall, it was a very productive week all around! We hit our Milestones as a team, and got a `3` on our MVP goals for the week. The planning in week one definitely prevented some issues that we would have undoubtedly experiences without planning. Integrating the APIs and servers all into one project went about as smoothly as I could have predicted, because the entire team was on the same page about all aspects of the project. We only had one API, Stripe -  it was implemented on Monday and fully functional on tuesday. I'm truly happy that I joined this project with this group, because we've been really making progress towards our Project MVP.
 
 
+### Whiteboard
+
+My whiteboard this week was Bitcoin trading. Here is the problem:
+"You're trying to make your fortune by trading Bitcoin. Suppose you want to automate this task. Write a function findMaxProfit that receives an array of today's Bitcoin prices. Your function should return the maximum profit you can make from a single buy and sell. You must buy first before selling; shorting is not allowed."
+
+Example:
+```
+const bitcoinPrices = [1050, 270, 1540, 3800, 2];
+findMaxProfit(bitcoinPrices);   // should return 3530, which is the max profit you can make from these prices by buying at 270 and selling at 3800
+```
+
+My process on these types of problems is to first determine my inputs/outputs. I know I was taking in an array of numbers, and had to return the difference between two of those numbers. Starting out, I wasn't too worried about the time complexity of the function, I just wanted to get the function to work, so I just brute-forced it. Once I got it working, I could then examine the function and speak to the time complexity, and make any adjustments if necessary. You can see the full whiteboard video below.
+
 
 Whiteboard (success!): https://youtu.be/vwFosfgL5QY
+
 
 
 Live Deployed Front-End: https://fitmetrix.netlify.com/

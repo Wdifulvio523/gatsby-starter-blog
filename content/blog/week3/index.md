@@ -17,7 +17,7 @@ Team Contribution graph:
 ![contribution graph](../../assets/teamweek3.png)
 https://github.com/Lambda-School-Labs/labs9-workout-tracker/graphs/contributors
 
-GitHub Handle: Wdifulvio523 - The entire week one of not getting cmy contributions entered has made this number look lower than it is, but that issue has since been fixed and weeks 2 and 3 have had proper contribution metrics.
+GitHub Handle: Wdifulvio523 - The entire week one of not getting my contributions entered has made this number look lower than it is, but that issue has since been fixed and weeks 2 and 3 have had proper contribution metrics.
 
 ![contribution graph](../../assets/selfweek3.png)
 
@@ -66,7 +66,7 @@ Fisrt, the functionality for unscheduling a scheduled workout. We're using hooks
  const [sWorkouts, setSWorkouts] = useState(state.scheduleWorkouts);
 ```
 
-I created a function that I would add to the schedule'd workouts "Unschedule" button's onClick handler. Here is the function:
+I created a function that I would add to the scheduled workout's "Unschedule" buttons' onClick handler. Here is the function:
 
 ```
 const unscheduleWorkout = async (e, scheduleWorkout) => {

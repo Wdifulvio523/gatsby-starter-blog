@@ -1,15 +1,15 @@
 ---
-title: Week 5 - UX and UI
+title: Week 5 - Final Polish
 date: '2019-02-08T22:40:32.169Z'
 ---
 
-### Week 4 - Final Touches!
+### Week 5 - Final Touches!
 
 This week we had a plan put in place to fix our remaining bugs, complete two rounds of user testing, and implement that feedback before the end of the week, and we did js tthat! we now have a polished, well-put-together application that is ready for use!
 
 ### Part 1 - Individual Accomplishments this Week
 
-This week went a lot smoother for me, individually, than last week did. There was no imposter syndrome or programmers block that I experienced last week, and I was incredibly productive. I contributed to completing the calendar refactor to use hooks and store, completed styling for The entire schedule view page, and much more! 
+This week went a lot smoother for me, individually, than last week did. There was no imposter syndrome or programmers block that I experienced last week, and I was incredibly productive. I contributed to completing the calendar refactor to use hooks and store, completed styling for the entire schedule view page, and much more! 
 
 
 Team Contribution graph: 
@@ -68,7 +68,6 @@ First, we imported the needed data from state, which we get from the store, and 
 Became this: 
 ```
 const { state, dispatch } = useContext(Store);
-
 const { currentDay, datePopulated, dateSelected } = state;
 ```
 
